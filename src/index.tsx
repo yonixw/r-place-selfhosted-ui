@@ -30,7 +30,7 @@ const AppHeader = (props: { x: number; y: number; scale: number }) => {
     const url = createBMP(myImageData.latest);
     let a = document.createElement("a");
     a.href = url;
-    a.download = "r-place-israel.png";
+    a.download = "r-place-selfhosted-download.png";
     a.click();
     /* setTimeout(() => {
       window.URL.revokeObjectURL(url);
