@@ -6,7 +6,7 @@ Run a self hosted version of [r/place](https://www.reddit.com/r/place). This is 
 
 ## CodeSandbox Demo
 
-See how to get it running right away: https://youtu.be/5_Pc0r8Mipo
+👉 👉 👉  See how to get it running right away: https://youtu.be/5_Pc0r8Mipo
 
 ## How to Run
 
