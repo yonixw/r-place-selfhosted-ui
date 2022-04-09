@@ -32,6 +32,7 @@ The canvas size is 1024x1024. With support for 24 colors.
 
 Programmed fetures:
 
+- Support mobile touch for drag
 - User send pixel
 - Server brodcast pixel to other users
 - Server periodiclly saves the image to disk
@@ -40,6 +41,7 @@ Programmed fetures:
 
 Missing features:
 
+- Support mobile touch for zoom in/out
 - Captcha validation against bots
 - Username or Nickname association with each pixel:
   - Saving to disk
