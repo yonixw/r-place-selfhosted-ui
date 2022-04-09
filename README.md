@@ -4,9 +4,13 @@ Run a self hosted version of [r/place](https://www.reddit.com/r/place). This is 
 
 ![Example](public/readme_example.png)
 
+## CodeSandbox Demo
+
+See how to get it running right away: https://youtu.be/5_Pc0r8Mipo
+
 ## How to Run
 
-The front is a React project. The backend is a Nodejs project. Simply:
+The front is a React project.
 
 - Clone the repo
 - Run `npm install`
@@ -19,7 +23,7 @@ You will also need the server up and running. The server need to be as secure as
 Pass the server address as a param in the URL (and add `/websockets` after), for example:
 
 ```
-https://ui.com/?server=wss://server.com/websockets
+https://{ui-domain}/?server=wss://{server-domain}/websockets
 ```
 
 ## Features
