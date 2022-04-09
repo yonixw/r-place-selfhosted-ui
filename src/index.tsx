@@ -230,7 +230,7 @@ const App = () => {
         onApply={() => sendColor(x, y, selColor)}
       />
       <div style={{ textAlign: "center", color: "#eaeaea" }}>
-        <sub>08.04.2022 v1</sub>
+        <sub>10.04.2022 v1</sub>
       </div>
       <Modal appElement={rootElement} />
     </>
