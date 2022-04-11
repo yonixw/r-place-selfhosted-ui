@@ -23,7 +23,11 @@ You will also need the server up and running. The server need to be as secure as
 Pass the server address as a param in the URL (and add `/websockets` after), for example:
 
 ```
+HTTP-S
 https://{ui-domain}/?server=wss://{server-domain}/websockets
+
+HTTP
+http://{ui-domain}/?server=ws://{server-domain}/websockets
 ```
 
 ## Features
@@ -47,7 +51,7 @@ Missing features:
   - Saving to disk
   - Sending for other Users who request it
 
-## Data Consideration
+## Outbound Data Transfer Considerations
 
 If you intend to run the sever on a public cloud (AWS, Azure, Hetzner etc..) Please consider the following data being downloaded for each command:
 
@@ -58,8 +62,10 @@ So, for example, if you expect max 10 users concurrent for 3 days, with
 each user getting full canvas every 5 min, you will have a minimum of:
 
 ```
-10 * (60 / 5) * 24 * 3 = 8640 downloads
-8640 * 0.7MB = 6GB of outbound data.
+10 * (60 / 5) * 24 * 3 
+= 8640 downloads, Or:
+8640 * 0.7MB 
+= 6GB of outbound data.
 ```
 
 Currently Hetzner provide the cheapest option of a VM with 2cpu and 20TB outbound data for around 10 euro per month.
