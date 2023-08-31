@@ -19,10 +19,10 @@
     "typescript": "4.1.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts  --openssl-legacy-provider start",
     "rm": "CI='' rm -rf tsconfig.json ",
-    "build": "CI='' react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "build": "CI='' react-scripts  --openssl-legacy-provider build",
+    "test": "react-scripts test  --openssl-legacy-provider --env=jsdom",
     "eject": "react-scripts eject"
   },
   "browserslist": [
