@@ -37,7 +37,7 @@ Using local setup, this is the address to play:
 
 **Note 1**: To get a public url to share with friends, I suggest to simply import it to CodeSandbox and publish with Vercel (for both client/server).
 
-**Note 2**: You will also need the server up and running. The server need to be as secure as the UI (Chrome doesn't allow HTTP**S** UI => HTTP WebSocket connections).
+**Note 2**: The server need to be as secure as the UI (Chrome doesn't allow HTTP-**S** UI (front) => HTTP WebSocket (server) connections).
 
 ## Features
 
