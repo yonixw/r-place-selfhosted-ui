@@ -16,6 +16,7 @@ Open 2 command lines, 1 for server and 1 for client
     * `cd r-place-selfhosted-ui`
     *  `yarn install` (and not npm install)
     *  `yarn start` - will start react in `localhost:3000`
+         *  If you have old node (before v18), run: `yarn startBefore16`
 * Server:
     * `git clone https://github.com/yonixw/r-place-selfhosted-server`
     * `cd r-place-selfhosted-server`
