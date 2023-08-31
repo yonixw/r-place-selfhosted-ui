@@ -52,14 +52,20 @@ Programmed fetures:
 - Server periodiclly saves the image to disk
 - Server send "compressed" image to new users on connect
 - Server send "compressed" image to old users every few minutes (not enforces, ui side)
+- Throttle per IP
 
 Missing features:
 
 - Support mobile touch for zoom in/out
+- Fast pixel paint for PC (Click on canvas or a key like `Space`)
 - Captcha validation against bots
 - Username or Nickname association with each pixel:
   - Saving to disk
+     - Seperate long list of `(i) -> username`
+     - And then dynamic bytes to point to index
+         - Dynamic like in protobuff, that first bit in byte tells if under 126 o.w we expect another byte.
   - Sending for other Users who request it
+     - Should be on request basis like another express ep `/getUser (x,y) -> string`
 
 ## Outbound Data Transfer Considerations
 
