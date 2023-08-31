@@ -10,25 +10,34 @@ Run a self hosted version of [r/place](https://www.reddit.com/r/place). This is 
 
 ## How to Run
 
-The front is a React project.
-
-- Clone the repo
-- Run `npm install`
-- Run `npm start`
-
-Also, To get a public url for the front, I suggest to simply import it to CodeSandbox and publish with Vercel.
-
-You will also need the server up and running. The server need to be as secure as the UI (no HTTPS UI => HTTP WebSocket connections).
+Open 2 command lines, 1 for server and 1 for client
+* Client:
+    * `git clone https://github.com/yonixw/r-place-selfhosted-ui`
+    * `cd r-place-selfhosted-ui`
+    *  `yarn install` (and not npm install)
+    *  `yarn start` - will start react in `localhost:3000`
+* Server:
+    * `git clone https://github.com/yonixw/r-place-selfhosted-server`
+    * `cd r-place-selfhosted-server`
+    *  `yarn install` (and not npm install)
+    *  `yarn start` - will start express in `localhost:8080`
 
 Pass the server address as a param in the URL (and add `/websockets` after), for example:
 
 ```
-HTTP-S
+Both HTTP-S
 https://{ui-domain}/?server=wss://{server-domain}/websockets
 
-HTTP
+Both HTTP (local development)
 http://{ui-domain}/?server=ws://{server-domain}/websockets
 ```
+
+Using local setup, this is the address to play:
+`http://localhost:3000/?server=ws://localhost:8080/websockets`
+
+**Note 1**: To get a public url to share with friends, I suggest to simply import it to CodeSandbox and publish with Vercel (for both client/server).
+
+**Note 2**: You will also need the server up and running. The server need to be as secure as the UI (Chrome doesn't allow HTTP**S** UI => HTTP WebSocket connections).
 
 ## Features
 
